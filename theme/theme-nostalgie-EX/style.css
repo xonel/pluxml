@@ -1,0 +1,564 @@
+/* Theme "defaut" PluXml - Copyright Pluxml.org */  
+
+/* ---------------------
+Html et body
+--------------------- */
+html {
+	font : 75%/1.7em "Lucida sans unicode", Lucida, Tahoma, Arial, sans-serif;
+	/*font : 75%/1.7em "Ubuntu", Lucida, Tahoma, Arial, sans-serif;*/
+	color : #555; /*bas de l article : Rédigé par L e . N o X */
+	background : #F5F5F5;/*fond ecran*/
+	margin : 0;
+	padding : 0;
+	letter-spacing: 0.5px;
+}
+body {
+	margin : 0;
+	padding : 0;
+}
+#page {
+	width : 95%;
+	margin : 0 auto 0 auto;
+	padding : 0 0 0 0;
+}
+
+/* ---------------------
+Styles generaux
+--------------------- */
+h1 { font-size : 2.1em; }
+h2 { font-size : 1.2em; }
+h3 { font-size : 1.1em; margin : 0; padding: 0; }
+p { margin : 0; padding: 0; }
+pre {	color: black;
+	background-color: #F5F5F0;
+	border-color: silver;
+	border-style: solid;
+	border-width: 1px 1px 1px 5px;
+	border-left: 5px solid orange;
+	padding: 5px;
+	overflow: auto;
+	font:10px terminal,sans-serif;
+}
+a { color : #2365b0; text-decoration : none;}
+a:hover { color : #b50000; }
+.center { text-align : center; }
+.clearer { clear : both; visibility : hidden; margin : 0; padding : 0; }
+
+
+/* ---------------------
+Formulaire
+--------------------- */
+fieldset {
+	border : 0;
+	margin: 0;
+	padding: 0;
+}
+label {
+	display : block;
+}
+input, textarea {
+	background-color : #EEEEEE;
+	border-left : 1px solid #C3C9D0;
+	border-top : 1px solid #C3C9D0;
+	border-right : 1px solid #D4DAE2!important;
+	border-bottom : 1px solid #D4DAE2;
+	padding: 2px 3px;
+	font-size: 100%;
+	letter-spacing: 0.5px;
+	margin: 0 0 3px 0;
+}
+input:focus, textarea:focus {
+	background-color : #FFFFFF;
+	border-left : 1px solid #D4DAE2;
+	border-top : 1px solid #D4DAE2;
+	border-right : 1px solid #C3C9D0;
+	border-bottom : 1px solid #C3C9D0;
+}
+textarea{
+	font : 100%/1.7em "Lucida sans unicode", Lucida, Tahoma, Arial, sans-serif;
+	letter-spacing: 0.5px;
+	}
+
+/* ---------------------
+Haut de page (#top)
+--------------------- */
+#top {
+	width :100%;
+	margin : 0 auto;
+}
+#header {*/Titre principal du site*/
+	width :90%;
+	color : #482018;
+	margin : 0 auto; padding : 38px 0 30px 30px; /*Bandeau du TITRE PRINCIPAL*/
+	background: url("img/logo.png") no-repeat 0px 5px;
+}
+#header h1 { /* Titre et sous-titre du site */
+	margin : 0; padding : 0 0 0 150px; /*Alignement : TITRE PRINCIPAL Chez le Nox*/
+	font-weight : normal;
+	letter-spacing : 1px;
+	color : #333;
+	display : inline;
+}
+#header h1 a { /* Lien du titre */
+	text-decoration : none;
+	color : #333;
+}
+#header p {
+	color : #909090;
+	padding : 0 0 0 170px;/*Alignement : SOUS TITRE PRINCIPAL Je ne dors pas longtemps*/
+}
+#top h1 a:hover {
+	color : #777;
+}
+ul#access {
+	margin : 0 auto; padding : 0;
+	width :90%;
+	list-style-type : none;
+}
+ul#access li {
+	float : right;
+	margin : 0 auto;
+}
+ul#access li a {
+	display : block;
+	padding : 4px 0 4px 20px;
+	color :  #555;
+	text-decoration : none;
+	letter-spacing : 1px;
+}
+ul#access li a:hover, ul.access li.active a {
+	text-decoration : underline;
+}
+#menu {
+        background : #C0C0C0; /*couleur de la bande : Accueil Telechargements SiteMap*/
+	margin : 0 0 20px 0;
+	height : 30px;
+/*	width : 925px; #ligne horizontale 1:2 ecran*/
+	width :100%;
+}
+#menu ul {
+	margin : 0 auto;
+	padding : 0;
+	width :90%;
+	list-style-type : none;
+}
+#menu .left li {
+	float : left;
+}
+#menu .right li {
+	float : right;
+}
+#menu li a {
+	display : block;
+	padding : 5px 10px 4px 19px;
+	color :  #000000;/*Police : Accueil Telechargement...*/
+	text-decoration : none;
+	font-size : 0.9em;
+	letter-spacing : 2px;
+	background : url("img/icons.png") no-repeat 0 -377px;/*icon rond Gris : bare du haut */
+}
+#menu li a:hover, #menu li a.active {
+	background : url("img/icons.png") no-repeat 0 -345px;/*icon rond Noir : bare du haut */
+}
+#menu li#static-home { padding-left:5px; }
+#menu li#static-home a{
+	background : url("img/icons.png") no-repeat 0 -121px;/*icon Maison Noir : bare du haut */
+	padding : 5px 10px 4px 19px;
+	height : 16px;
+}
+#menu li#static-home a.active, #menu li#static-home a:hover {
+	background : url("img/icons.png") no-repeat 0 -89px;/*icon Maison Gris : bare du haut */
+	padding : 5px 10px 4px 19px;
+	height : 16px;
+}
+#menu ul.right li a {
+	background : url("img/icons.png") no-repeat 0px -217px;
+	padding : 5px 10px 4px 19px;
+}
+#menu ul.right li a:hover {
+	background : url("img/icons.png") no-repeat 0px -185px;
+	padding : 5px 10px 4px 19px;
+}
+
+/* --------------------- 
+Zone de contenu (#content)  
+--------------------- */
+#content { /* Bloc */
+	width : 75%;
+/*	width : 650px;*/
+	margin : 0;
+	padding : 0;
+	float : left;
+}
+#content .title { /* Titre de l'article */
+	color : #DD4814;
+	font-size : 1.75em;
+	margin : 0 0 0 0;
+	padding : 0;
+	letter-spacing : 2px;
+	font-weight : lighter;
+	max-width: 600px;
+}
+#content .static { /* Titre de l'article */
+	color : #DD4814;
+	font-size : 1.75em;
+	margin : 0 0 10px 0;
+	padding : 0;
+	letter-spacing : 2px;
+	font-weight : lighter;
+	max-width: 600px;
+}
+#content .title a { /* Lien sur le titre de l'article */
+	color : #DD4814;
+	text-decoration : none;
+	max-width: 600px;
+}
+#content .title a:hover {
+	color : #2365b0;
+}
+#content .post {
+	background : #FFF;
+	border : 1px solid #CCC;
+	margin : 5px 0 8px 0;
+	clear : both;
+	padding : 5px 7px 5px 7px;
+}
+#content .post p {
+	padding : 4px 0 4px 0;
+}
+#content p.date {
+	float : right;
+	margin : -20px 0 2px 0;
+}
+#content p.date span {
+	font-size : 2.75em;
+}
+#content p.info_top {
+	float : left;
+	margin : 0;
+	padding : 3px 0 0 0;
+}
+#content p.info_bottom{
+	background : url("img/icons.png") no-repeat 0 -414px; /*Icone : Mots clés : aucun*/ 
+	padding: 0 0 16px 19px;
+	margin: 0 0 16px 0;
+	border-bottom: 1px solid #bbb;
+	}
+#content p.info_bottom a{
+	padding: 0 5px;
+	}
+#content p.info_bottom span a{
+	background : url("img/icons.png") no-repeat 0 -158px;/*Icone : aucun commentaire*/
+	float: right;
+	padding: 0 0 0 19px;
+	}
+#content .infos {
+	padding : 10px 10px 10px 70px;
+	border: 1px #dedede solid;
+	margin: 10px 0 10px 0;
+	background: #FFF url('img/bg_author_info.png') no-repeat left;
+	min-height: 48px;
+}
+
+#content p.cat span a, #content p.cat span{ color: #66993F; }
+#content p.cat  a.active { font-weight:bold;}
+#content .feed_categorie, #content .feed_article {
+	clear : both;
+	padding : 0;
+	text-align : center;
+}
+#content .feed_categorie a, #content .feed_article a {
+	color : #333;
+	background : url("img/icons.png") no-repeat 0 -190px;
+	padding : 4px 0 4px 20px;
+	height : 20px;
+}
+#content .feed_categorie a:hover, #content .feed_article a:hover {
+	text-decoration: underline;
+	}
+#pagination { /* Conteneur des liens 'page suivante' et 'page precedente' */
+	text-align : center;
+	margin : 10px 0 0 0;
+	padding : 10px;
+}
+#pagination a { color : #333; }
+#pagination a:hover { color : #777; }
+
+/* --------------------- 
+Paneau lateral (#aside)  
+--------------------- */
+#aside {
+        float : right;
+		width : 20%;
+	/*	width : 250px;*/
+        padding : 0;
+        margin : 0 -1px 0 0;
+        line-height: 1.5em;
+}
+#aside div {
+	margin : 0 0 0 0;
+	padding : 0;
+	width : 100%;
+}
+#aside h3 { /* Titre des menus de la aside */
+        color : #333;
+        font-size : 1.1em;
+        margin : 0;
+        border-radius: 4px 4px 0 0;
+        padding : 6px 0 .5em 26px;
+        height: 1.5em;
+}
+#aside ul { /* Bloc de liste */
+        margin : 0 0 2em 0;
+        border : 1px solid #cbcbcb;
+        border-top : none;
+        border-radius: 0 0 4px 4px;
+        padding : 0;
+        background: #FFF;
+}
+#aside li { /* Element de liste */
+	list-style-type : none;
+	border-top : 1px solid #C3C9D0;
+	padding: 0 1em;
+}
+#aside li a { /* Liens dans les listes */
+	text-decoration : none;
+	color : #909090; /* couleur des liens "Archives décembre 2011 octobre 2011 septembre 2011" */
+}
+
+.side-1 h3 { background-color : #B4CFE5 !important }/*categories*/
+.side-2 h3 { background-color : #CDBFD9 !important }/*archives*/
+.side-3 h3 { background-color : #CBD7AD !important }/*tags */
+.side-4 h3 { background-color : #EFE3C0 !important }/*articles*/
+.side-5 h3 { background-color : #BEBEBE !important }/*comments*/
+.side-6 h3 { background-color : #FFC891 !important }/*rss*/
+
+
+#side-categories h3 { background : url("img/icons.png") no-repeat 6px -313px; }
+#side-archives   h3 { background : url("img/icons.png") no-repeat 6px -249px; }
+#side-tags       h3 { background : url("img/icons.png") no-repeat 6px -408px; }
+#side-articles   h3 { background : url("img/icons.png") no-repeat 6px -281px; }
+#side-comments   h3 { background : url("img/icons.png") no-repeat 6px -152px; }
+#side-rss	 h3 { background : url("img/icons.png") no-repeat 6px -152px; }
+
+
+.side-1 li:hover, .side-1 li.active { background : #DEEDF9; }
+.side-2 li:hover, .side-2 li.active { background : #EAE2F1; }
+.side-3 li:hover, .side-3 li.active { background : #E8EFD9; }
+.side-4 li:hover, .side-4 li.active { background : #FDF5DF; }
+.side-5 li:hover, .side-5 li.active { background : #EEEEEE; }
+.side-6 li:hover, .side-6 li.active { background : #FFE7CE; }
+
+
+#side-tags ul { padding: .4em; }
+#side-tags li{/*Dispose les mots des tag en ligne horizontale, si desactivé vertical*/
+        border-top: none;
+        border-bottom: none;
+        display: inline-block;
+        padding: 0;
+        margin: .2em;
+}
+#side-tags li a{
+        display: inline-block;
+        padding: .2em .5em;
+}
+#side-tags li:hover, #side-tags li.active { border-radius: 1em; }
+
+/* ---------------------
+Commentaires (#comments)
+--------------------- */
+#comments h2 {
+	color : #333;
+	font-size : 1.5em;
+	margin : 0 0 10px 0;
+	padding : 0;
+	letter-spacing : 2px;
+	font-weight : lighter;
+}
+#comments {
+	border-bottom: 1px solid #bbb;
+	margin: 0 0 16px 0;
+	padding: 0 0 16px 0;
+	}
+#comments .comment {
+	margin : 0 0 8px 0;
+}
+#comments .comment blockquote {
+	padding : 0;
+	margin : 0;
+}
+#comments .comment .info_comment {
+	clear:both;
+	float:left;
+	color : #333;
+	padding : 2px 4px;
+}
+#comments .comment .num_comment {
+	float:right;
+	padding : 2px 4px;
+}
+
+#comments .type-normal .info_comment, #comments .type-admin .info_comment{ background : #dedede; }
+#comments .comment .content_com { clear:both; padding : 2px 4px;border: 1px solid #ccc;background: #FFF;}
+#comments .type-admin .content_com { background : #e8efd9; }
+#comments .type-admin .content_com { padding : 2px 4px;border: 1px solid #cbd7ad;}
+#form h2 {
+	color : #333;
+	font-size : 1.5em;
+	margin : 0 0 0 0;
+	padding : 0 0 0 0;
+	letter-spacing : 2px;
+	font-weight : lighter;
+}
+#form p.message_com {
+	text-align : center;
+	font-weight : bold;
+	color : #333;
+	margin : 8px 0 0 0;
+	padding : 4px 0;
+}
+#form .form_left {
+	float : left;
+	margin : 0 20px 0 0;
+}
+#form .form_left input[type=text]{
+	width: 200px;
+	}
+#form input[type=text]:hover, #form textarea:hover{
+	cursor: pointer;
+	}
+#form label.lab_com{
+	float: left;
+	padding: 0 0 0 5px;
+	}
+#form textarea {
+	width : 410px;
+	float : right;
+	height : 105px;
+	margin : 0;
+} 
+#form .button{ margin : 20px 0 0 0; }
+#form .button span.buttons { float: right; }
+#form input[type=submit], #form input[type=reset] {
+	background : #EEE;
+	padding : 0px 5px 2px 5px;
+	height: 26px;
+}
+
+#form input[type=submit]:hover{
+	cursor: pointer;
+	background : #5baa21;
+	color: #FFF;
+	}
+#form input[type=reset]:hover{
+	cursor: pointer;
+	background : #c63e39;
+	color: #FFF;
+	}
+#form p.button{
+	background:  url('img/icons.png') no-repeat 0 -62px;
+	padding: 0 0 0 19px;
+	}
+/* ---------------------
+Pied de page (#footer)
+--------------------- */
+#footer {
+        max-width : 100%;
+        margin : 2em auto .5em auto;
+        background : #C0C0C0; /* couleur de la bande : © Chez Le.NoX - Généré par PluXml */
+        border-radius: 4px;
+        color : #808080;/* couleur d ecriture: Généré par ... en 0.347s  */
+        padding : 0;
+        height : 2.5em;
+        clear : both;
+}
+#footer p {
+        float : left;
+        margin : .5em 1em;
+}
+#foot-links {
+        float : right;
+        margin: .5em 1em;
+}
+#footer a {
+        color : #808080;/* couleur d ecriture: © Chez Le.NoX  */
+        text-decoration : none;
+}
+#footer a:hover {
+        border-bottom : 1px dashed;
+}
+#foot-top{
+        background: url('img/icons.png') no-repeat 0 -449px;/*icon bas de page : Haut de page couleur Gris*/
+        padding-left: 19px;
+}
+#foot-admin{
+        background: url('img/icons.png') no-repeat 0 -1px;/*icon bas de page : Administration */
+        padding-left: 19px;
+}
+#foot-top:hover {
+        background: url('img/icons.png') no-repeat 0 -481px;/*icon bas de page : Haut de page couleur Noir*/
+}
+#foot-admin:hover {
+        background: url('img/icons.png') no-repeat 0 -33px;
+}
+
+/* ---------------------
+Tags
+--------------------- */
+.info_bottom a {
+	padding-right: 10px;
+	text-decoration : none;
+}
+.info_bottom a.active {
+	font-weight : bold;
+	color : #b50000;
+}
+/* ---------------------
+Capcha
+--------------------- */
+.capcha-letter {
+	font-weight : bold;
+	color : #b50000;
+}
+.capcha-word {
+	padding:5px;
+	background:#eee; 
+	border:1px solid #fff;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	color:#333;
+	font-size:1.1em;
+	font-style:italic;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+/* ---------------------
+Border-radius CSS3
+--------------------- */
+#menu, #footer, #content .post, #form input, #form textarea, #comments .comment .content_com, #content .infos
+	{/*Ne pas toucher cette zone*/
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	}
+
+#aside h3
+ { /* Titre des menus de la aside */
+        color : #909090; /*couleur du titre des categories*/
+        font-size : 1.1em;
+        margin : 0;
+        border-radius: 4px 4px 0 0;
+        padding : 6px 0 .5em 26px;
+        height: 1.5em;
+}
+#aside ul
+ { /* Bloc de liste */
+        margin : 0 0 2em 0;
+        border : 1px solid #cbcbcb;
+        border-top : none;
+        border-radius: 0 0 4px 4px;
+        padding : 0;
+        background: #F0F0F0;/*couleur de l arriere plan : du titre des categories*/
+}
