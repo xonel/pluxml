@@ -1,6 +1,0 @@
-Free template for PluXml by http://www.unesourisetmoi.info
-licence CC :
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Contrat Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">template for pluxml</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.unesourisetmoi.info" property="cc:attributionName" rel="cc:attributionURL">fonds d'écran</a> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">licence Creative Commons Paternité - Partage des Conditions Initiales à l'Identique 3.0 Unported</a>.<br />Les autorisations au-delà du champ de cette licence peuvent être obtenues à <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.unesourisetmoi.info/pages/contacts.php" rel="cc:morePermissions">http://www.unesourisetmoi.info/pages/contacts.php</a>.
-
-Merci de bien vouloir laisser les liens vers pluxml.org et unesourisetmoi.info dans le footer ;) (licence CC)
-Pour toute personnalisation ou aide, voir sur le forum ou sur : http://blog.unesourisetmoi.info.
