@@ -1,0 +1,484 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////       BACKGROUND        ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+html, body
+{
+	margin : 0px;
+	padding : 0px;
+}
+
+html
+{
+	background-color : #4D4D4D;
+	font-family : Trebuchet MS , sans-serif;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////    STRUCTURE GLOBALE    ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#conteneur
+{
+	width : 94%;
+	min-width : 600px;
+	margin : auto;
+	margin-top : 35px;
+	padding-bottom : 25px;
+}
+
+#corps
+{
+	width : 100%;
+	background-color : #FFFFFF;
+	color : #000000;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////        BANNIERE        ////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#banniere
+{
+	height : 180px;
+	background : url("img/banniere.jpg") top left no-repeat;
+	overflow : hidden;
+	position : relative;
+}
+
+#logo
+{
+	width : 128px;
+	height : 128px;
+	background : url("img/logo.png");
+	float : left;
+	position : relative;
+	left : 60px;
+	top : 20px;
+}
+
+#cadre_banniere
+{
+	width : 475px;
+	height : 80px;
+	padding : 0px;
+	background : url("img/cadre_banniere.png");
+	float : right;
+	position : relative;
+	right : 5px;
+	top : 5px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////          TEXTE          ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#texte 
+{
+	padding : 20px;
+	margin-right : 215px;
+	text-align : justify;
+	font-size : 15px;
+}
+
+.cadre
+{
+	border : 1px solid #000000;
+	background-color : #FFFFFF;
+}
+
+.titre
+{
+	height : 26px;
+	background : url("img/cadre.png");
+	color : #FFFFFF;
+	text-align : center;
+	font-size : 14px;
+	font-weight : bold;
+	padding-top : 6px;
+}
+
+.marge_interne
+{
+	padding : 10px 10px 0px 10px;
+}
+
+p
+{
+	margin-top : 0px;
+}
+
+h1
+{
+	font-size : 19px;
+	margin-top : 0px;
+}
+
+h2
+{
+	font-size : 16px;
+	margin-top : 0px;
+}
+a
+{
+	color : #288de8;
+	text-decoration : none;
+}
+
+a:hover
+{
+	color : #ff8000;
+}
+
+#overflow
+{
+	overflow : hidden;
+}
+	
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////     MENU HORIZONTAL     ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+	#menu, #menu ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	#menu {
+		width: 94%px;
+		margin: 0px;
+		border: 1px solid #222;
+		background-color: #111;
+		background-image: -moz-linear-gradient(#444, #111); 
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));	
+		background-image: -webkit-linear-gradient(#444, #111);	
+		background-image: -o-linear-gradient(#444, #111);
+		background-image: -ms-linear-gradient(#444, #111);
+		background-image: linear-gradient(#444, #111);
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+		-moz-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+		-webkit-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+		box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+	}
+	
+	#menu:before,
+	#menu:after {
+		content: "";
+		display: table;
+	}
+	
+	#menu:after {
+		clear: both;
+	}
+	
+	#menu {
+		zoom:1;
+	}
+	
+	#menu li {
+		float: left;
+		border-right: 1px solid #222;
+		-moz-box-shadow: 1px 0 0 #444;
+		-webkit-box-shadow: 1px 0 0 #444;
+		box-shadow: 1px 0 0 #444;
+		position: relative;
+	}
+	
+	#menu a {
+		float: left;
+		padding: 12px 30px;
+		color: #999;
+		text-transform: uppercase;
+		font: bold 12px Arial, Helvetica;
+		text-decoration: none;
+		text-shadow: 0 1px 0 #000;
+	}
+	
+	#menu li:hover > a {
+		color: #fafafa;
+	}
+	
+	*html #menu li a:hover { /* IE6 only */
+		color: #fafafa;
+	}
+	
+	#menu ul {
+		margin: 20px 0 0 0;
+		_margin: 0; /*IE6 only*/
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: 39px;
+		left: 0;
+		z-index: 9999;    
+		background: #444;
+		background: -moz-linear-gradient(#444, #111);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));
+		background: -webkit-linear-gradient(#444, #111);    
+		background: -o-linear-gradient(#444, #111);	
+		background: -ms-linear-gradient(#444, #111);	
+		background: linear-gradient(#444, #111);
+		-moz-box-shadow: 0 -1px rgba(255,255,255,.3);
+		-webkit-box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+		box-shadow: 0 -1px 0 rgba(255,255,255,.3);	
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;  
+	}
+
+	#menu li:hover > ul {
+		opacity: 1;
+		visibility: visible;
+		margin: 0;
+	}
+	
+	#menu ul ul {
+		top: 0;
+		left: 150px;
+		margin: 0 0 0 20px;
+		_margin: 0; /*IE6 only*/
+		-moz-box-shadow: -1px 0 0 rgba(255,255,255,.3);
+		-webkit-box-shadow: -1px 0 0 rgba(255,255,255,.3);
+		box-shadow: -1px 0 0 rgba(255,255,255,.3);		
+	}
+	
+	#menu ul li {
+		float: none;
+		display: block;
+		border: 0;
+		_line-height: 0; /*IE6 only*/
+		-moz-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+		-webkit-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+		box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+	}
+	
+	#menu ul li:last-child {   
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;    
+	}
+	
+	#menu ul a {    
+		padding: 10px;
+		width: 130px;
+		_height: 10px; /*IE6 only*/
+		display: block;
+		white-space: nowrap;
+		float: none;
+		text-transform: none;
+	}
+	
+	#menu ul a:hover {
+		background-color: #0186ba;
+		background-image: -moz-linear-gradient(#04acec,  #0186ba);	
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+		background-image: -webkit-linear-gradient(#04acec, #0186ba);
+		background-image: -o-linear-gradient(#04acec, #0186ba);
+		background-image: -ms-linear-gradient(#04acec, #0186ba);
+		background-image: linear-gradient(#04acec, #0186ba);
+	}
+	
+	#menu ul li:first-child > a {
+		-moz-border-radius: 3px 3px 0 0;
+		-webkit-border-radius: 3px 3px 0 0;
+		border-radius: 3px 3px 0 0;
+	}
+	
+	#menu ul li:first-child > a:after {
+		content: '';
+		position: absolute;
+		left: 40px;
+		top: -6px;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-bottom: 6px solid #444;
+	}
+	
+	#menu ul ul li:first-child a:after {
+		left: -6px;
+		top: 50%;
+		margin-top: -6px;
+		border-left: 0;	
+		border-bottom: 6px solid transparent;
+		border-top: 6px solid transparent;
+		border-right: 6px solid #3b3b3b;
+	}
+	
+	#menu ul li:first-child a:hover:after {
+		border-bottom-color: #04acec; 
+	}
+	
+	#menu ul ul li:first-child a:hover:after {
+		border-right-color: #0299d3; 
+		border-bottom-color: transparent; 	
+	}
+	
+	#menu ul li:last-child > a {
+		-moz-border-radius: 0 0 3px 3px;
+		-webkit-border-radius: 0 0 3px 3px;
+		border-radius: 0 0 3px 3px;
+	}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////     MENU VERTICAL     ////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#MV
+{
+	width : 200px;
+	float : right;
+	text-align : center;
+	margin-top : 20px;
+	margin-right : 6px;
+}
+
+.marge_MV
+{
+	height : 20px;
+}
+
+.en_tete_MV
+{
+	width : 200px;
+	height : 21px;
+	background : url("img/en_tete_MV.png") no-repeat;
+	margin : auto;
+	color : #FFFFFF;
+	font-size : 14px;
+	padding-top : 1px;
+}
+
+a.lien_MV
+{
+	width : 200px;
+	height : 25px;
+	background : url("img/bouton_MV.png") no-repeat;
+	margin : auto;
+	color : #424242;
+	font-size : 14px;
+	font-weight : bold;
+	padding-top : 5px;
+	text-decoration : none;
+	display : block;
+}
+
+a.lien_MV:hover
+{
+	background : url("img/bouton_MV_hover.png") no-repeat;
+	color : #1E1E1E;
+}
+
+.bottom_MV
+{
+	width : 200px;
+	height : 18px;
+	background : url("img/bottom_MV.png") no-repeat;
+	margin : auto;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////       BAS DE PAGE       ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#pied_de_page
+{
+	height : 34px;
+	background : url("img/pied_de_page.png") center;
+	text-align : center;
+	padding-top : 16px;
+	color : #FFFFFF;
+	clear : both;
+}
+
+#pied_de_page a
+{
+	color : #FFFFFF;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////         BORDURE         ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#CHG
+{
+	background : url("img/CHG.png") no-repeat top left;
+	float : left;
+	width : 21px;
+	height : 21px;
+	margin : 0px;
+}
+
+#CHD
+{
+	background : url("img/CHD.png") no-repeat top right;
+	float : right;
+	width : 21px;
+	height : 21px;
+	margin : 0px;
+}
+
+#CBG
+{
+	background : url("img/CBG.png") no-repeat bottom left;
+	float : left;
+	width : 21px;
+	height : 21px;
+	margin : 0px;
+}
+
+#CBD
+{
+	background : url("img/CBD.png") no-repeat bottom right;
+	float : right;
+	width : 21px;
+	height : 21px;
+	margin : 0px;
+}
+
+#BH
+{
+	background : url("img/BH.png") repeat-x top center;
+	margin-right : 21px;
+	margin-left : 21px;
+	height : 21px;
+}
+
+#BG
+{
+	background : url("img/BG.png") repeat-y left;
+	padding-left : 21px;
+	margin : 0px;
+}
+
+#BD
+{
+	background : url("img/BD.png") repeat-y right;
+	padding-right : 21px;
+	margin : 0px;
+}
+
+#BB
+{
+	background : url("img/BB.png") repeat-x bottom center;
+	margin-right : 21px;
+	margin-left : 21px;
+	height : 21px;
+	padding : 0px;
+}
+
+label{
+	display: block;
+	}
